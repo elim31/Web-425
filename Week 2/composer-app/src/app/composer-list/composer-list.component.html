@@ -1,0 +1,39 @@
+<!--
+============================================
+; Title: composer-list.component.html
+; Author: Richard Krasso
+; Modified by: Eunice Lim
+; Date: 2 June 2021
+; Description: Composer list
+; Attribution: https://getbootstrap.com/docs/4.0/content/tables/
+;===========================================
+*/-->
+<div role="main" class="container">
+  <br /><br />
+
+  <h2>Composer List</h2>
+
+  <br /><br />
+  <div class="col-sm-12">
+    <table class="table table-bordered">
+      <thead class="thead-dark">
+        <tr> <!--table headings-->
+          <th scope="col">Composers</th>
+
+          <th scope="col">Genre</th>
+        </tr>
+      </thead>
+
+      <tbody *ngFor="let composer of composers"> <!--row info being looped over-->
+        <tr>
+          <td>
+            {{ composer.fullName }}
+          </td>
+          <td>
+            {{ composer.genre }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

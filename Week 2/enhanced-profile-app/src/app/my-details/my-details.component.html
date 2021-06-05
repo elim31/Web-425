@@ -1,0 +1,20 @@
+<!--
+============================================
+; Title: my-details.component.html
+; Author: Richard Krasso
+; Modified by: Eunice
+; Date: 1 June 2021
+; Description: My details listed on right column
+;===========================================
+*/-->
+<ul class="bootstraplist">
+  <li>Name: {{ myProfile.fullName }}</li>
+  <li>Favorite Food: {{ myProfile.favoriteFood }}</li>
+  <li>Favorite Color: {{ myProfile.favoriteColor }}</li>
+  <li class ="list-group-item">
+    Keywords:
+    <span *ngFor="let word of myProfile.keywords">
+      {{ word }}
+    </span>
+  </li>
+  </ul>
