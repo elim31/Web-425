@@ -1,11 +1,11 @@
-//
+
 //============================================
-// Title: composer-list.component.html
+// Title: composer-list.component.ts
 // Author: Eunice Lim
 // Date: 2 June 2021
 // Description: Composer list
 //===========================================
-//-->
+
 
 import { Component, OnInit } from '@angular/core';
 
