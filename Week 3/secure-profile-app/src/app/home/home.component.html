@@ -1,0 +1,61 @@
+<!--
+============================================
+; Title: Exercise 2.3 home.component.html
+; Author: Richard Krasso
+; Date: 9 June 2021
+; Modified By: Eunice Lim
+; Description: Exercise 3.3
+;===========================================
+*/-->
+
+<!--creating bootstrap layout with navigation-->
+<nav class ="navbar navbar-expand-sm bg-dark navbar-dark">
+
+  <ul class="navbar-nav">
+
+    <li class="nav-item active">
+      <a class="nav-link" href="#">Home</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="#">About</a>
+    </li>
+    <li class="nav-item ">
+      <a class="nav-link" href="#">Contact Us</a>
+    </li>
+
+  </ul>
+
+</nav>
+
+<!--main container-->
+<div role="main" class="container">
+<br /><br />
+
+  <h2>Exercise 3.3 - Passing Date to Routes, Part 2</h2>
+
+<br /><br />
+
+    <div class="row" *ngIf="isLoggedIn; else showError">
+      <!--column 1 of 2-->
+      <div class = "col-sm-4">
+        <app-my-image></app-my-image> <!--my image goes here-->
+    </div>
+<!--column 2 of 2-->
+    <div class="col-sm-8">
+      <app-my-details></app-my-details><!--my details goes here-->
+
+    </div>
+  </div>
+
+  <ng-template #showError>
+    <div class="row">
+      <div class="col-sm-12">
+        <h4 class ="alert alert-danger">
+          You are not authorized to view this content.
+        </h4>
+      </div>
+    </div>
+  </ng-template>
+
+</div>
