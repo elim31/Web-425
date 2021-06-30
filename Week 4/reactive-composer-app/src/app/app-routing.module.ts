@@ -1,3 +1,12 @@
+
+/**
+ * Title: app-routing.module.ts
+ * Author: Professor Krasso
+ * Modified by: Eunice Lim
+ * Date: 30 June 2021
+ * Description: App Routing module
+ */
+
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ComposerListComponent } from './composer-list/composer-list.component';

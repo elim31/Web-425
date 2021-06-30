@@ -1,3 +1,11 @@
+/**
+ * Title: composer.service.ts
+ * Author: Professor Krasso
+ * Modified by: Eunice Lim
+ * Date: 30 June 2021
+ * Description: Service class for Composer objects
+ */
+
 import { Injectable } from '@angular/core';
 import { IComposer } from './composer.interface';
 

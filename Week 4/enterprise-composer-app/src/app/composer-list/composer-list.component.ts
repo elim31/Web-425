@@ -1,4 +1,4 @@
-//
+
 //============================================
 // Title: composer-list.component.html
 // Author: Eunice Lim
